@@ -77,6 +77,13 @@ export default function Form() {
           }}
         />
 
+        {/* One hack we can do is remove the name on the input, add a hidden input with the correct value */}
+        {/* <input
+          type="hidden"
+          name="startDate"
+          value={formState.startDate?.toISOString()}
+        /> */}
+
         <DatePicker
           label="End Date"
           value={formState.endDate}
