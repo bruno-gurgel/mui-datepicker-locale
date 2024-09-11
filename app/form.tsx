@@ -13,7 +13,10 @@ import { useFormState } from "react-dom";
 const locales = ["de", "en"];
 type LocaleKey = (typeof locales)[number];
 
-const initialState = {
+const initialState: {
+  startDate: string | null;
+  endDate: string | null;
+} = {
   startDate: null,
   endDate: null,
 };
